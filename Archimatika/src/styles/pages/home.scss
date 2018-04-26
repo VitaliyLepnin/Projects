@@ -1,1 +1,878 @@
-// home page styles
+
+$white: #fff;
+$hoverColor: #d16c1f;
+$activeColor: #16b9f0;
+$black: #232323;
+
+$DinReg:'DINPro-Regular';
+$DinBold:'DINPro-Bold';
+$Gotham:'GothamPro-Black';
+
+main {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.header {
+	background-image: url(../img/slider1.jpg);
+	background-size: cover;
+	height: 100vh;
+	transition: 1s;
+	
+	&_logo {
+		height: 20px;
+		width: 208px;
+		display: block;
+		padding: 40px;
+		float: left;
+	}
+
+	&_menu {
+		
+		&:hover {
+			border-color: $hoverColor;
+			a {
+				color: $hoverColor;
+			}
+		}
+
+		&:active {
+			border-color: $activeColor;
+			a {
+				color: $activeColor;
+			}
+		}
+
+		width: 58px;
+		height: 58px;
+		border: solid 1px $white;
+		border-radius: 50%;
+		display: block;
+		float: right;
+		margin: 23px 40px 0 0;
+		position: relative;
+
+		a {
+			width: 36px;
+  			height: 9px;
+  			font-family: $DinBold;
+  			font-size: 12px;
+  			font-weight: bold;
+  			font-style: normal;
+  			text-align: left;
+  			text-decoration: none;
+			color: $white;
+			text-transform: uppercase;
+			position: absolute;
+			top: 25px;
+			left: -8px;
+		}
+	}
+
+	&_leng {
+
+		ul {
+			margin: 30px 0 0 40px;
+		}
+
+			a {
+				width: 16px;
+		  		height: 9px;
+		  		font-family: $DinBold;
+		  		font-size: 12px;
+		  		font-weight: bold;
+		  		font-style: normal;
+		  		line-height: 2.5;
+		  		letter-spacing: 1.2px;
+		  		color: $white;
+		  		text-decoration: none;
+		  		text-transform: uppercase;
+	  		}
+
+	  		a:hover {
+				color: $hoverColor;
+			}
+
+			a:active {
+				color: $activeColor;
+			}
+	}
+
+	&_btn {
+		width: 1279px;
+		height: 1px;
+		background: rgba(255,255,255, 0.4);
+		margin-top: 188px;
+		position: relative;
+		cursor: pointer;
+
+		&_cover {
+			width: 36px;
+			height: 36px;
+			position: absolute;
+			top: -17px;
+			display: block;
+
+			&_link {
+					width: 9px;
+					height: 9px;
+					padding: 5px;
+					background-color: $white;
+					border-radius: 50%;
+					display: block;
+					margin: 12px auto;
+				}
+				
+		}
+
+		&_cover:hover {
+			border: solid 1px $white;
+			border-radius: 50%;
+			top: -18px;
+			border-color: $hoverColor;
+
+			& a {
+				width: 5px;
+				height: 5px;
+				padding: 3px;
+				background-color: $white;
+				border-radius: 50%;
+				display: block;
+				margin: 15px auto;
+				background-color: $hoverColor;
+			}
+		}
+	}
+
+	&_title {
+		color: $white;
+		width: 530px;
+		margin: 80px 0 0 715px;
+		position: relative;
+	
+
+		& span {
+			font-family: $DinReg;
+			font-size: 16px;
+			font-weight: normal;
+			font-style: normal;
+			line-height: 1.5
+		}
+
+		& h1 {
+			font-family: &Gotham;
+		  	font-size: 50px;
+		  	font-weight: 900;
+		  	font-style: normal;
+		  	line-height: 55px;
+		  	letter-spacing: normal;
+		  	text-align: left;
+		  	text-transform: uppercase;
+		}
+
+		& h1 span {
+			width: 9px;
+			height: 9px;
+			padding: 5px;
+			background-color: $white;
+			border-radius: 50%;
+			display: block;
+			margin: 12px auto;
+			position: absolute;
+			top: 160px;
+			left: 515px;
+		}
+	}		
+}
+
+.cover1 {
+	left: 22px;
+}
+
+.cover2 {
+	left: 559px;
+}
+
+.cover3 {
+	left: 1217px;
+}
+
+.results {
+	position: relative;
+	z-index: 6;
+
+	&_bgLine{
+		height: 1439px;
+		width: 583px;
+		left: 190px;
+		background: linear-gradient(to right, #ebebeb 9%, $white 0);
+		background-size: 9px 100%;
+		z-index: 1;
+		position: absolute;
+	}
+
+	&_logo {
+		@extend .header_logo;
+		z-index: 3;
+		position: absolute;
+	}
+
+	&_menu {
+		@extend .header_menu;
+		border-color: $black;
+		z-index: 3;
+
+		a {
+			color: $black;
+		}
+	}
+
+	&_img1 {
+		position: absolute;
+		left: 174px;
+		top: 140px;
+		z-index: 3;
+	}
+
+	&_img2 {
+		position: absolute;
+		left: 422px;
+		top: 460px;
+		z-index: 4;
+	}
+
+	&_img3 {
+		position: absolute;
+		left: 174px;
+		top: 780px;
+		z-index: 5;
+	}
+
+	&_built {
+		position: absolute;
+		z-index: 5;
+		left: 680px;
+		top: 240px;
+		width: 79px;
+		height: 9px;
+		
+
+			span {
+				display: inline-block;
+    			vertical-align: middle;
+    			overflow: hidden;
+				text-align: center;
+				color: $black;
+				font-family: $DinBold;
+				font-size: 12px;
+				font-weight: 700;
+				line-height: 30px;
+				text-transform: uppercase;
+				letter-spacing: 1.2px;
+			}
+
+		&_lineB{
+			position: absolute;
+			z-index: 2;
+			top: 254px; 
+			width: 650px;
+			height: 1px;
+			background-color: $black;
+			opacity: 0.4;
+			
+		}
+
+		&_lineA{
+			position: absolute;
+			z-index: 2;
+			top: 254px; 
+			left: 800px;
+			width: 485px;
+			height: 1px;
+			background-color: $black;
+			opacity: 0.4;
+		}
+	}
+
+	&_builtNumber {
+		position: absolute;
+		top: 287px;
+		left: 677px;
+		width: 91px;
+		height: 62px;
+		z-index: 2;
+
+		span {
+			color: $black;
+			font-family: $Gotham;
+			font-size: 70px;
+			font-weight: 400;
+			line-height: 30px;
+			text-transform: uppercase;
+		}
+
+		p {
+			padding-top: 10px;
+			color: $black;
+			font-family: $Gotham;
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 30px;
+		}
+	}	
+
+	&_build {
+		position: absolute;
+		z-index: 2;
+		top: 619px;
+		left: 921px;
+		width: 53px;
+		height: 9px;
+
+		span {
+			color: $black;
+			font-family: $DinBold;
+			font-size: 12px;
+			font-weight: 700;
+			line-height: 30px;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+		}
+	}
+
+	&_buildLines {
+		height: 24px;
+		width: 277px;
+		top: 619px;
+		left: 999px;
+		background-repeat: repeat-x;
+		background-image: url(../img/buildLine.png);
+		position: absolute;
+	}
+
+	&_buildNumber {
+		@extend .results_builtNumber;
+		top: 660px;
+		left: 922px;
+
+			p {
+				padding-top: none;
+			}
+	}
+
+	&_project {
+		@extend .results_build;
+		top: 999px;
+		left: 680px;
+
+		&_dots {
+			position: absolute;
+			z-index: 3;
+			top: 1007px;
+			left: 790px;
+			
+			span {
+				background-color: $black;
+				padding: 5px;
+				border-radius: 50%;
+				margin-left: 47px;
+				display: inline-block;
+			}
+		}
+	}	
+
+	&_projectNumber {
+		@extend .results_builtNumber;
+		top: 1038px;
+		left: 678px;
+	}
+
+	&_view {
+		position: absolute;
+		top: 1387px;
+		left: 230px;
+		z-index: 3;
+
+		span {
+			color: $black;
+			font-family: $DinBold;
+			font-size: 12px;
+			font-weight: 700;
+			line-height: 12px;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+		}
+	}
+}
+
+.stub {
+	height: 1439px;
+}
+
+.articles {
+	margin-top: 60px;
+
+	&_blocks {
+		width: 263px;
+		height: 265px;
+		margin-left: 34px;
+		margin-bottom: 63px;
+		display: inline-block;
+		vertical-align: top;
+
+		span {
+			color: $black;
+			font-family: $Gotham;
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 30px;
+			display: block;
+		}
+
+		&:nth-child(1) span{
+			padding-bottom: 56px;
+		}
+
+		&:nth-child(2) span{
+			padding-bottom: 56px;
+		}
+
+		&:nth-child(3) span{
+			padding-bottom: 26px;
+		}
+
+		&:nth-child(4) span{
+			padding-bottom: 26px;
+		}
+
+
+		p {
+			color: $black;
+			font-family: $DinReg;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			text-align: left;
+		}
+	}
+
+	&_slogan {
+		background-repeat: no-repeat;
+		background-image: url(../img/AA.png);
+		background-position: center;
+		margin-top: 63px;
+		text-align: center;
+		padding-top: 130px;
+		height: 346px;
+	
+
+		&_logo {
+			
+			padding-bottom: 30px;
+			
+		}
+
+		span {
+			width: 574px;
+			height: 39px;
+			color: $black;
+			font-family: $DinReg;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			padding-bottom: 57px;
+			
+		}
+
+		p {
+			color: $black;
+			font-family: $DinBold;
+			font-size: 12px;
+			font-weight: 700;
+			line-height: 18px;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+			padding-top: 57px;
+		}
+
+	}
+}
+
+.about {
+	margin-top: 50px;
+	background-color: #191919;
+	height: 100%;
+	position: relative;
+	
+	&_mainImg {
+		width: 270px;
+		height: 800px;
+		margin: 80px 505px 59px;
+		z-index: 3;
+		position: relative;
+	}
+	
+	&_happy {
+		width: 785px;
+		height: 209px;
+		opacity: 0.8;
+		color: #353535;
+		font-family: $Gotham;
+		font-size: 240px;
+		font-weight: 400;
+		line-height: 30px;
+		position: absolute;
+		z-index: 2;
+		top: 430px;
+		left: 238px;
+	}
+
+	&_happiness {
+		width: 406px;
+		position: absolute;
+		top: 170px;
+		left: 41px;
+		
+		span {
+			width: 241px;
+			height: 49px;
+			color: $white;
+			font-family: $Gotham;
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 30px;
+		}
+
+		p {
+			width: 406px;
+			height: 63px;
+			color: $white;
+			font-family: $DinReg;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			text-align: left;
+			padding-top: 30px;
+		}
+	}
+
+	&_project {
+		@extend .about_happiness;
+		top: 388px;
+		left: 835px;
+		z-index: 3;
+	}
+
+	&_cities {
+		@extend .about_happiness;
+		top: 605px;
+	}
+
+	&_gain {
+		width: 140px;
+		height: 27px;
+		margin: 0 auto;
+		display: block;
+
+		span {
+			color: $white;
+			font-family: $DinBold;
+			font-size: 12px;
+			font-weight: 700;
+			line-height: 18px;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+		}
+	}
+
+	&_principles {
+		margin: 60px 0 0 53px;
+
+
+		&_principle {
+			display: inline-block;
+			width: 390px;
+			padding-left: auto;
+			text-align: center;
+			vertical-align: top;
+
+			span {
+				margin-top: 40px;
+				width: 71px;
+				height: 20px;
+				color: $white;
+				font-family: $Gotham;
+				font-size: 24px;
+				font-weight: 400;
+				line-height: 30px;
+				text-align: left;
+				display: block;
+				margin-left: 60px;
+			}
+
+			p {
+				width: 252px;
+				margin-top: 30px;
+				color: $white;
+				font-family: $DinReg;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+				text-align: left;
+				margin-left: 60px;
+			}
+
+		}
+	}
+
+	&_principlesH {
+		@extend .about_principles;
+		display: none;
+	}
+
+	&_showPrinciples {
+		margin: 57px 0 102px 548px;
+		width: 185px;
+		border-bottom: solid 1px $white;
+		padding-bottom: 28px;
+		cursor: pointer;
+
+		&:hover {
+			border-color: $hoverColor;
+
+			span {
+				color: $hoverColor;
+			}
+		}
+		
+
+		span {
+			color: $white;
+			font-family: $DinReg;
+			font-size: 12px;
+			font-weight: 700;
+			line-height: 18px;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+					
+		}
+
+	}
+
+}
+
+.beginning {
+	margin: 80px 0 94px 0;
+	text-align: center;
+	span {
+		width: 185px;
+		height: 19px;
+		color: #171717;
+		font-family: $Gotham;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 30px;
+	}
+
+	p {
+		width: 609px;
+		height: 62px;
+		color: #232323;
+		font-family: $DinReg;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		margin: 29px auto 0 auto;
+	}
+
+	&_line1 {
+		width: 60px;
+		height: 1px;
+		background-color: #191919;
+		display: inline-block;
+		margin: 38px 150px 0 0;
+	}
+
+	&_line2 {
+		@extend .beginning_line1;
+		margin: 38px 0 0 0;
+	}
+
+	a {
+		width: 125px;
+		height: 11px;
+		color: #191919;
+		font-family: $DinReg;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 18px;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+		text-decoration: none;
+		margin-top: 14px;
+		display: block;
+		margin: 17px auto;
+	}
+
+	& a:hover{
+		color: $hoverColor;
+	}
+
+	&_line3 {
+		@extend .beginning_line1;
+		margin-top: 0;
+	}
+
+	&_line4 {
+		@extend .beginning_line1;
+		margin: 0;
+		
+	}
+
+
+}
+
+.footer {
+	background-color: #f6f6f6;
+	display: inline-block;
+	
+	&_social {
+		width: 195px;
+		margin: 60px 0  0 40px;
+		display: inline-block;
+		
+		img {
+			display: inline-block;
+		}
+
+		&_tel {
+			display: inline-block;
+			width: 120px;
+			margin-left: 37px;
+			
+
+			span {
+				color: $black;
+				font-family: $DinBold;
+				font-size: 12px;
+				font-weight: 700;
+				line-height: 15px;
+				text-transform: uppercase;
+				letter-spacing: 1.2px;
+			}
+
+			p {
+				color: $black;
+				font-family: $DinReg;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 20px;
+			}
+		}
+
+		&_link {
+			margin-top: 59px;
+
+			a {
+				color: $black;
+				font-family: $DinBold;
+				font-size: 12px;
+				font-weight: 700;
+				line-height: 30px;
+				text-transform: uppercase;
+				letter-spacing: 1.2px;
+				text-decoration: none;
+			}
+
+			a:first-child {
+				margin-right: 28px;
+			}
+
+			a:hover {
+				color: $hoverColor;
+			}
+
+			a:active {
+				color: $activeColor;
+			}
+
+		}
+	}
+
+	&_nav1 {
+		display: inline-block;
+		margin: 60px 0 0 113px;
+		vertical-align: top;
+
+		a {
+			color: $black;
+			font-family: $DinBold;
+			font-size: 12px;
+			font-weight: 700;
+			line-height: 31px;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+			text-decoration: none;
+		}
+		
+		a:hover {
+				color: $hoverColor;
+		}
+
+		a:active {
+				color: $activeColor;
+		}
+	}
+
+	&_nav2 {
+		@extend .footer_nav1;
+		margin: 60px 0 0 160px;
+	}
+
+	&_mail {
+		display: inline-block;
+		margin: 60px 115px 0 146px;
+		vertical-align: top;
+
+		span {
+			color: $black;
+			font-family: $DinBold;
+			font-size: 12px;
+			font-weight: 700;
+			line-height: 15px;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+		}
+
+		p {
+			color: $black;
+			font-family: $DinReg;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 20px;
+		}
+
+		&_media {
+			@extend .footer_mail;
+			margin: 40px 0 0 0;
+		}
+	}
+
+	&_year {
+		margin: 33px 0 40px 40px;
+		display: inline-block;
+
+		span {
+			color: $black;
+			font-family: $DinReg;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 24px;
+		}
+	}
+
+	&_by {
+		@extend .footer_year;
+		margin-left: 1068px;
+	}
+}
