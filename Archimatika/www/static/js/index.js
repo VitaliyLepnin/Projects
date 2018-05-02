@@ -305,13 +305,7 @@ var throttle = exports.throttle = function throttle(fn) {
 "use strict";
 
 
-/**
- * App entry point.
- *
- * @module App
- */
-
-/** Import initialized-by-default modules/libs */
+//-------------- Button - show ------------------------
 
 __webpack_require__(3);
 
@@ -325,20 +319,82 @@ var _helpers = __webpack_require__(0);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var $link = $('.about_showPrinciples');
+
+$link.click(function (e) {
+
+	var $principlesH = $('.about_principlesH');
+
+	$principlesH.show();
+
+	$link.hide();
+});
+
+//--------------- Slider buttons --------------------------------
+var $headerCss1 = {
+	'backgroundImage': 'url(static/img/slider1.jpg)',
+	'backgroundSize': 'cover',
+	'height': '100vh'
+};
+
+var $headerCss2 = {
+	'backgroundImage': 'url(static/img/slider2.jpg)',
+	'backgroundSize': 'cover',
+	'height': '100vh'
+};
+
+var $headerCss3 = {
+	'backgroundImage': 'url(static/img/slider3.jpg)',
+	'backgroundSize': 'cover',
+	'height': '100vh'
+};
+
+var $header = $('main');
+
+var $linkSlide1 = $('.cover1');
+
+$linkSlide1.click(function (slide1) {
+
+	$header.css($headerCss1);
+});
+
+var $linkSlide2 = $('.cover2');
+
+$linkSlide2.click(function (slide2) {
+
+	$header.css($headerCss2);
+});
+
+var $linkSlide3 = $('.cover3');
+
+$linkSlide3.click(function (slide3) {
+
+	$header.css($headerCss3);
+});
+
 /**
- * Run appropriate scripts for each page.
- **/
+ * App entry point.
+ *
+ * @module App
+ */
+
+/** Import initialized-by-default modules/libs */
 
 
 /** Import page controllers */
-switch (_helpers.currentPage) {
-  /** Home page */
-  case 'home':
-    new _Home2.default();break;
 
-  /** No page found */
-  default:
-    console.warn('Undefined page');
+
+/**
+ * Run appropriate scripts for each page.
+ **/
+switch (_helpers.currentPage) {
+	/** Home page */
+	case 'home':
+		new _Home2.default();break;
+
+	/** No page found */
+	default:
+		console.warn('Undefined page');
 }
 
 /***/ }),

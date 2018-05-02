@@ -11,8 +11,8 @@
   </head>
   <body>
     <main data-page='home'>
-      <div class="header">
-        <div class="clearfix">
+      <header class="header">
+        <div class="header_fixed clearfix">
           <div class="header_logo">
             <a href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="208" height="20">
@@ -57,7 +57,7 @@
             <span></span>
           </h1>
         </div>
-      </div>
+      </header>
       <!-- /.header -->
       <div class="results">
         <div class="results_bgLine "> </div>
@@ -139,7 +139,7 @@
         </div>
       </div>
       <div class="stub"></div>
-      <div class="articles">
+      <article class="articles">
         <div class="articles_blocks">
           <span>Архитектура</span>
           <p>Больше, чем просто здания. Это среда, которая может и должно менять жизнь людей в лучшую сторону.</p>
@@ -172,78 +172,81 @@
           <p>В этом нам помогают
             <br>наши принципы:</p>
         </div>
-      </div>
+      </article>
       <div class="about">
-        <img class="about_mainImg" src="static/img/about1.jpg" alt="Building">
-        <!-- /.about_mainImg  -->
-        <div class="about_happy">Happy</div>
-        <!-- /.about_happy  -->
-        <div class="about_happiness">
-          <span>Делать обитателей счастливыми</span>
-          <p>Здания возводятся для людей, поэтому мы никогда не ставим комфорт в угоду эстетики и оригинальности. Так создается уникальная среда комфортной жизни.</p>
-        </div>
-        <!-- /.about_happiness -->
-        <div class="about_project">
-          <span>Делать коммерчески прибыльные проекты</span>
-          <p>Мы соединяем архитектурную выразительность, коммерческую логику и рентабельность. Сегодня это незаменимые компоненты прибыльного проекта.</p>
-        </div>
-        <!-- /.about_project -->
-        <div class="about_cities">
-          <span>Делать города красивыми</span>
-          <p>Никогда не портим неповторимый облик города, остаемся верны принципу «не навреди». Сохраняем выразительность объекта, не жертвуя окружающим пространством.</p>
-        </div>
-        <!-- /.about_cities -->
-        <div class="about_gain">
-          <span>От такого подхода
-            <br> выигрывают все:</span>
-        </div>
-        <!-- /.about_gain -->
-        <div class="about_principles">
-          <div class="about_principles_principle">
-            <img src="static/img/principle.jpg" alt="principle building">
-            <span>Люди</span>
-            <p>покупают квартиры с продуманными планировками. Подъезды в которые приятно входить. Придомовую территорию, по которой хочеться гулять.</p>
+        <div class="about_content">
+          <img class="about_mainImg" src="static/img/about1.jpg" alt="Building">
+          <!-- /.about_mainImg  -->
+          <div class="about_happy">Happy</div>
+          <!-- /.about_happy  -->
+          <div class="about_happiness">
+            <span>Делать обитателей счастливыми</span>
+            <p>Здания возводятся для людей, поэтому мы никогда не ставим комфорт в угоду эстетики и оригинальности. Так создается уникальная среда комфортной жизни.</p>
           </div>
-          <!-- /.about_principles_principle -->
-          <div class="about_principles_principle">
-            <img src="static/img/principle.jpg" alt="principle building">
-            <span>Заказчики</span>
-            <p>спокойны, потому что знают — объекты Архиматики выгодно выделяются на фоне других застройщиков, а качество и продуманность на порядок выше.</p>
+          <!-- /.about_happiness -->
+          <div class="about_project">
+            <span>Делать коммерчески прибыльные проекты</span>
+            <p>Мы соединяем архитектурную выразительность, коммерческую логику и рентабельность. Сегодня это незаменимые компоненты прибыльного проекта.</p>
           </div>
-          <!-- /.about_principles_principle -->
-          <div class="about_principles_principle">
-            <img src="static/img/principle.jpg" alt="principle building">
-            <span>Застройщики</span>
-            <p>получают реальную к исполнению документацию, проработанную до последнего гвоздя. Получают вовремя!</p>
+          <!-- /.about_project -->
+          <div class="about_cities">
+            <span>Делать города красивыми</span>
+            <p>Никогда не портим неповторимый облик города, остаемся верны принципу «не навреди». Сохраняем выразительность объекта, не жертвуя окружающим пространством.</p>
           </div>
-          <!-- /.about_principles_principle -->
+          <!-- /.about_cities -->
+          <div class="about_gain">
+            <span>От такого подхода
+              <br> выигрывают все:</span>
+          </div>
+          <!-- /.about_gain -->
+          <div class="about_principles">
+            <div class="about_principles_principle">
+              <img src="static/img/principle.jpg" alt="principle building">
+              <span>Люди</span>
+              <p>покупают квартиры с продуманными планировками. Подъезды в которые приятно входить. Придомовую территорию, по которой хочеться гулять.</p>
+            </div>
+            <!-- /.about_principles_principle -->
+            <div class="about_principles_principle">
+              <img src="static/img/principle.jpg" alt="principle building">
+              <span>Заказчики</span>
+              <p>спокойны, потому что знают — объекты Архиматики выгодно выделяются на фоне других застройщиков, а качество и продуманность на порядок выше.</p>
+            </div>
+            <!-- /.about_principles_principle -->
+            <div class="about_principles_principle">
+              <img src="static/img/principle.jpg" alt="principle building">
+              <span>Застройщики</span>
+              <p>получают реальную к исполнению документацию, проработанную до последнего гвоздя. Получают вовремя!</p>
+            </div>
+            <!-- /.about_principles_principle -->
+          </div>
+          <!-- /.about_principles -->
+          <div class="about_principlesH">
+            <div class="about_principles_principle">
+              <img src="static/img/principle.jpg" alt="principle building">
+              <span>Люди</span>
+              <p>покупают квартиры с продуманными планировками. Подъезды в которые приятно входить. Придомовую территорию, по которой хочеться гулять.</p>
+            </div>
+            <!-- /.about_principles_principle -->
+            <div class="about_principles_principle">
+              <img src="static/img/principle.jpg" alt="principle building">
+              <span>Заказчики</span>
+              <p>спокойны, потому что знают — объекты Архиматики выгодно выделяются на фоне других застройщиков, а качество и продуманность на порядок выше.</p>
+            </div>
+            <!-- /.about_principles_principle -->
+            <div class="about_principles_principle">
+              <img src="static/img/principle.jpg" alt="principle building">
+              <span>Застройщики</span>
+              <p>получают реальную к исполнению документацию, проработанную до последнего гвоздя. Получают вовремя!</p>
+            </div>
+            <!-- /.about_principles_principle -->
+          </div>
+          <!-- /.about_principlesH -->
+          <div class="about_showPrinciples">
+            <span>Смотреть все принципы</span>
+          </div>
+          <!-- /.about_showPrinciples -->
         </div>
-        <!-- /.about_principles -->
-        <div class="about_principlesH">
-          <div class="about_principles_principle">
-            <img src="static/img/principle.jpg" alt="principle building">
-            <span>Люди</span>
-            <p>покупают квартиры с продуманными планировками. Подъезды в которые приятно входить. Придомовую территорию, по которой хочеться гулять.</p>
-          </div>
-          <!-- /.about_principles_principle -->
-          <div class="about_principles_principle">
-            <img src="static/img/principle.jpg" alt="principle building">
-            <span>Заказчики</span>
-            <p>спокойны, потому что знают — объекты Архиматики выгодно выделяются на фоне других застройщиков, а качество и продуманность на порядок выше.</p>
-          </div>
-          <!-- /.about_principles_principle -->
-          <div class="about_principles_principle">
-            <img src="static/img/principle.jpg" alt="principle building">
-            <span>Застройщики</span>
-            <p>получают реальную к исполнению документацию, проработанную до последнего гвоздя. Получают вовремя!</p>
-          </div>
-          <!-- /.about_principles_principle -->
-        </div>
-        <!-- /.about_principlesH -->
-        <div class="about_showPrinciples">
-          <span>Смотреть все принципы</span>
-        </div>
-        <!-- /.about_showPrinciples -->
+        <!-- /.about_content -->
       </div>
       <div class="beginning">
         <span>С чего начать?</span>
@@ -255,75 +258,77 @@
         <div class="beginning_line4"></div>
       </div>
       <!-- /.beginning -->
-      <div class="footer">
-        <div class="footer_social">
-          <img src="static/img/footerA.png" alt="logo">
-          <div class="footer_social_tel">
-            <span>Телефон</span>
-            <p>380 44 228 77 28</p>
+      <footer class="footer">
+        <div class="footer_content">
+          <div class="footer_social">
+            <img src="static/img/footerA.png" alt="logo">
+            <div class="footer_social_tel">
+              <span>Телефон</span>
+              <a href="#">380 44 228 77 28</a>
+            </div>
+            <div class="footer_social_link">
+              <a href="#">facebook</a>
+              <a href="#">liveJournal</a>
+            </div>
           </div>
-          <div class="footer_social_link">
-            <a href="#">facebook</a>
-            <a href="#">liveJournal</a>
+          <!-- /.footer_social -->
+          <div class="footer_nav1">
+            <ul>
+              <li>
+                <a href="#">наш подход</a>
+              </li>
+              <li>
+                <a href="#">процесс работы</a>
+              </li>
+              <li>
+                <a href="#">проекты</a>
+              </li>
+              <li>
+                <a href="#">о компании</a>
+              </li>
+            </ul>
           </div>
-        </div>
-        <!-- /.footer_social -->
-        <div class="footer_nav1">
-          <ul>
-            <li>
-              <a href="#">наш подход</a>
-            </li>
-            <li>
-              <a href="#">процесс работы</a>
-            </li>
-            <li>
-              <a href="#">проекты</a>
-            </li>
-            <li>
-              <a href="#">о компании</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.footer_nav1 -->
-        <div class="footer_nav2">
-          <ul>
-            <li>
-              <a href="#">инженерные работы</a>
-            </li>
-            <li>
-              <a href="#">наша экспертиза</a>
-            </li>
-            <li>
-              <a href="#">журнал</a>
-            </li>
-            <li>
-              <a href="#">контакты</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.footer_nav2 -->
-        <div class="footer_mail">
-          <span>Для сотрудничесива</span>
-          <p>offers@archimatika.com</p>
-          <div class="footer_mail_media">
-            <span>Для СМИ</span>
-            <p>vasilenko.yu@archimatika.com</p>
+          <!-- /.footer_nav1 -->
+          <div class="footer_nav2">
+            <ul>
+              <li>
+                <a href="#">инженерные работы</a>
+              </li>
+              <li>
+                <a href="#">наша экспертиза</a>
+              </li>
+              <li>
+                <a href="#">журнал</a>
+              </li>
+              <li>
+                <a href="#">контакты</a>
+              </li>
+            </ul>
           </div>
+          <!-- /.footer_nav2 -->
+          <div class="footer_mail">
+            <span>Для сотрудничесива</span>
+            <p>offers@archimatika.com</p>
+            <div class="footer_mail_media">
+              <span>Для СМИ</span>
+              <p>vasilenko.yu@archimatika.com</p>
+            </div>
+          </div>
+          <!-- /.footer_mail -->
+          <div class="footer_year">
+            <span>©2018 Archimatica</span>
+          </div>
+          <div class="footer_by">
+            <span>by</span>
+            <img src="static/img/footerByImg.png" alt="V"> </div>
         </div>
-        <!-- /.footer_mail -->
-        <div class="footer_year">
-          <span>©2018 Archimatica</span>
-        </div>
-        <div class="footer_by">
-          <span>by</span>
-          <img src="static/img/footerByImg.png" alt="V"> </div>
-      </div>
+        <!-- /.footer_content -->
+      </footer>
       <!-- /.footer -->
     </main>
     <!--SCRIPTS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src='static/js/index.jquery.js'></script>
     <script src='static/js/index.js'></script>
-    <script src='static/js/script.js'></script>
   </body>
 </html>

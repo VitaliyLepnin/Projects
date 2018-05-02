@@ -9,40 +9,36 @@ $DinBold:'DINPro-Bold';
 $Gotham:'GothamPro-Black';
 
 main {
-	width: 1280px;
-	margin: 0 auto;
-}
 
-.header {
 	background-image: url(../img/slider1.jpg);
 	background-size: cover;
 	height: 100vh;
 	transition: 1s;
 	
+}
+
+.header {
+	height: 100vh;
+	width: 1280px;
+	margin: 0 auto;
+
+	&_fixed {
+		position: fixed;
+		width: 1280px;
+		height: 81px;
+		z-index: 8;
+	}
+
 	&_logo {
 		height: 20px;
 		width: 208px;
 		display: block;
 		padding: 40px;
 		float: left;
+		
 	}
 
 	&_menu {
-		
-		&:hover {
-			border-color: $hoverColor;
-			a {
-				color: $hoverColor;
-			}
-		}
-
-		&:active {
-			border-color: $activeColor;
-			a {
-				color: $activeColor;
-			}
-		}
-
 		width: 58px;
 		height: 58px;
 		border: solid 1px $white;
@@ -67,12 +63,26 @@ main {
 			top: 25px;
 			left: -8px;
 		}
+
+		&:hover {
+			border-color: $hoverColor;
+			a {
+				color: $hoverColor;
+			}
+		}
+
+		&:active {
+			border-color: $activeColor;
+			a {
+				color: $activeColor;
+			}
+		}
 	}
 
 	&_leng {
 
 		ul {
-			margin: 30px 0 0 40px;
+			padding: 111px 0 0 40px;
 		}
 
 			a {
@@ -198,6 +208,9 @@ main {
 }
 
 .results {
+	padding-top: 60px;
+	width: 1280px;
+	margin: 0 auto;
 	position: relative;
 	z-index: 6;
 
@@ -410,7 +423,11 @@ main {
 }
 
 .articles {
-	margin-top: 60px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	width: 1280px;
+	margin: 0 auto;
+	
 
 	&_blocks {
 		width: 263px;
@@ -499,10 +516,17 @@ main {
 }
 
 .about {
-	margin-top: 50px;
+
+	
 	background-color: #191919;
-	height: 100%;
-	position: relative;
+	padding-bottom: 60px;
+	
+
+	&_content {
+		margin: 0 auto;
+		position: relative;
+		width: 1280px;
+	}
 	
 	&_mainImg {
 		width: 270px;
@@ -587,6 +611,7 @@ main {
 
 	&_principles {
 		margin: 60px 0 0 53px;
+		z-index: 2;
 
 
 		&_principle {
@@ -662,6 +687,8 @@ main {
 }
 
 .beginning {
+	
+	margin: 0 auto;
 	margin: 80px 0 94px 0;
 	text-align: center;
 	span {
@@ -733,8 +760,14 @@ main {
 }
 
 .footer {
+	
 	background-color: #f6f6f6;
-	display: inline-block;
+	
+
+	&_content {
+		width: 1280px;
+		margin: 0 auto;
+	}
 	
 	&_social {
 		width: 195px;
@@ -761,12 +794,14 @@ main {
 				letter-spacing: 1.2px;
 			}
 
-			p {
+			a {
 				color: $black;
 				font-family: $DinReg;
 				font-size: 16px;
 				font-weight: 400;
 				line-height: 20px;
+				text-decoration: none;
+				display: block;
 			}
 		}
 
