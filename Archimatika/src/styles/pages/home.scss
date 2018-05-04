@@ -593,9 +593,9 @@ main {
 	}
 
 	&_gain {
-		width: 140px;
+		width: 100%;
 		height: 27px;
-		margin: 0 auto;
+		text-align: center;
 		display: block;
 
 		span {
@@ -656,21 +656,15 @@ main {
 	}
 
 	&_showPrinciples {
-		margin: 57px 0 102px 548px;
-		width: 185px;
-		border-bottom: solid 1px $white;
-		padding-bottom: 28px;
+		margin: 57px 0 102px 0;
+		text-align: center;
 		cursor: pointer;
 
-		&:hover {
+		span:hover {
+			color: $hoverColor;
 			border-color: $hoverColor;
-
-			span {
-				color: $hoverColor;
-			}
 		}
 		
-
 		span {
 			color: $white;
 			font-family: $DinReg;
@@ -679,16 +673,15 @@ main {
 			line-height: 18px;
 			text-transform: uppercase;
 			letter-spacing: 1.2px;
-					
+			border-bottom: solid 1px $white;
+			padding-bottom: 28px;	
 		}
-
 	}
-
 }
 
 .beginning {
 	
-	margin: 0 auto;
+	
 	margin: 80px 0 94px 0;
 	text-align: center;
 	span {
@@ -726,7 +719,7 @@ main {
 	}
 
 	a {
-		width: 125px;
+		width: 100%;
 		height: 11px;
 		color: #191919;
 		font-family: $DinReg;
@@ -803,6 +796,14 @@ main {
 				text-decoration: none;
 				display: block;
 			}
+
+			a:hover {
+				color: $hoverColor;
+			}
+
+			a:active {
+				color: $activeColor;
+			}
 		}
 
 		&_link {
@@ -820,7 +821,7 @@ main {
 			}
 
 			a:first-child {
-				margin-right: 28px;
+				margin-right: 10%;
 			}
 
 			a:hover {
